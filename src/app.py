@@ -43,11 +43,44 @@ def extract_token(request):
 
 # base endpoint
 @app.route("/")
-def hello_world():
+def secret():
     """
-    endpoint for printing Hello World!
+    endpoint for a fun secret message :)
     """
-    return "Hello World!"
+    
+    return """                     ##        .            
+              ## ## ##       ==            
+           ## ## ## ##      ===            
+       /\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\___/ ===        
+  ~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~   
+       \______ o          __/            
+         \    \        __/             
+          \____\______/                
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+
+
+
+
+
+
+
+          pls let me in 🫣"""
 
 # user routes
 @app.route("/register/", methods=["POST"])
